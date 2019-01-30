@@ -2,7 +2,7 @@
 
 #include <string>
 
-class user
+class User
 {
 
 	private:
@@ -14,11 +14,15 @@ class user
 
 
 	public:
-		user(std::string, size_t);
+		User();
+		User(std::string, size_t);
+		User(std::string, size_t, size_t);
 
-		size_t getId();
-		size_t getPostCount();
+		size_t getId() const;
+		size_t getPostCount() const;
 
-		std::string getNickname();
-		void setNickname();
+		std::string getNickname() const;
+		void setNickname(std::string);
+
+		bool operator==(const User&) const;
 };

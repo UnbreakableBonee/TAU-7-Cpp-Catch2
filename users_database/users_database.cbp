@@ -35,8 +35,11 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/user.h" />
-		<Unit filename="main.cpp" />
+		<Unit filename="include/userDatabase.h" />
 		<Unit filename="src/user.cpp" />
+		<Unit filename="src/userDatabase.cpp" />
+		<Unit filename="tests/catch.hpp" />
+		<Unit filename="tests/test.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
